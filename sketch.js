@@ -145,7 +145,7 @@ class Character {
     // 繪製角色
     translate(this.x, this.y);
     scale(this.facing, 1);
-    image(this.currentAnim[this.frameIndex], -32, -32,320,320);
+    image(this.currentAnim[this.frameIndex], -32, -32);
     pop();
 
     // 繪製發射物
@@ -155,7 +155,7 @@ class Character {
       scale(p.speed > 0 ? 1 : -1, 1);  // 根據移動方向翻轉火焰
       if (fire && fire.length > 0) {
         let fireIndex = Math.floor(frameCount/5) % fire.length;
-        image(fire[fireIndex], -16, -16, 32, 32);
+        image(fire[fireIndex], -16, -16, 320, 320);
       }
       pop();
     }
