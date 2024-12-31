@@ -155,7 +155,7 @@ class Character {
       scale(p.speed > 0 ? 1 : -1, 1);  // 根據移動方向翻轉火焰
       if (fire && fire.length > 0) {
         let fireIndex = Math.floor(frameCount/5) % fire.length;
-        image(fire[fireIndex], -16, -16, 320, 320);
+        image(fire[fireIndex], -16, -16);
       }
       pop();
     }
