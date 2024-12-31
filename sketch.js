@@ -145,7 +145,7 @@ class Character {
     // 繪製角色
     translate(this.x, this.y);
     scale(this.facing, 1);
-    image(this.currentAnim[this.frameIndex], -320, -320);
+    image(this.currentAnim[this.frameIndex], -32, -32);
     pop();
 
     // 繪製發射物
